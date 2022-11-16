@@ -87,7 +87,7 @@ char *_strcat(char *s1, char *s2)
  * @s1: First string
  * @s2: Seconde string
  *
- * Return: Pointer to copied string
+ * Return: Pointer to copied strings
  */
 char *_strcpy(char *s1, char *s2)
 {
