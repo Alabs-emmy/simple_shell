@@ -2,7 +2,7 @@
 
 /**
  * print_number - Write number to file stream
- * @num: Number passed
+ * @num: Numbers passed
  *
  */
 void print_number(int num)
