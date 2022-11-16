@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * parse_exec_free - Get commands, execute commands, free memory
+ * parse_exec_free - Get commands, execute command, free memory
  * @cmd: Commad passed
  * @ptr: Name of program
  * @env: Environment variables
