@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * print_arr - Print array
+ * print_arr - Print arrays
  * @arr: Array
  *
  */
