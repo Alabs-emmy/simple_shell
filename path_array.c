@@ -58,7 +58,7 @@ void arr_path_size(char ***ptrCmd, int argNum, char *str)
 
 
 /**
- * get_path - Get the array of commands and arguments
+ * get_path - Get the array of commands and argument
  * @cmd_ptr: Pointer to the input string
  *
  * Return: Array of stringd
