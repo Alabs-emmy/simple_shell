@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * free_arrcmd - Free allocated memory for array of commads
+ * free_arrcmd - Free allocated memory for array of commad
  * @arrCmd: Array of command and arguments
  */
 void free_arrcmd(char **arrCmd)
