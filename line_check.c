@@ -55,7 +55,7 @@ char *rmv_newline(char *s)
 
 
 /**
- * builtin_check - Check for built-in function
+ * builtin_check - Check for built-in functions
  * @cmd: Command passed
  * @str: Bulitin function
  *
