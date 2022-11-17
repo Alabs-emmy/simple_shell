@@ -1,47 +1,25 @@
 #include "shell.h"
 
 /**
- * _strcmp - Compare string literals with condtion of a character
- * @s1: First String
- * @s2: Second String
+ * _strdup - Copies a string to an allocated space in the memory
+ * @str: String passed
  *
- * Return: 0 - If the same
- *         res - Difference between the first different char
+ * Return: Pointer to duplicated string
+ *         NULL if failed
  */
-int _strcmp(char *s1, char *s2)
+char *_strdup(char *str)
 {
-	int index, res = 0, len = 0;
+	char *ptr = NULL;
+	int i;
 
-	while (*(s1 + len) != '=')
-		len++;
+	if (str == NULL)
+		return (NULL);
+	ptr = malloc(sizeof(char) * (_strlen(str) + 1));
+	if (ptr == NULL)
+		return (NULL);
+	for (i = 0; str[i]; i++)
+		ptr[i] = str[i];
+	ptr[i] = '\0';
 
-	for (index = 0; index < len && s2[index]; index++)
-	{
-		res = s1[index] - s2[index];
-		if (res != 0)
-			return (res);
-	}
-	return (res);
-}
-
-/**
- * _strcmp1 - Compare string literals
- * @s1: First string
- * @s2: Second Strin
- *
- * Return: 0 - If the same
- *        res - Difference between the first different char
- */
-int _strcmp1(char *s1, char *s2)
-{
-	int index, res = 0;
-
-	for (index = 0; s1[index] && s2[index]; index++)
-	{
-		res = s1[index] - s2[index];
-		if (res != 0)
-			return (res);
-	}
-
-	return (res);
+	return (ptr);
 }
