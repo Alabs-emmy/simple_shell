@@ -7,9 +7,9 @@
  *
  * Return: 0
  */
-int main(int _attribute_((unused)) argc, char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
-	char cmd = NULL, *prg = argv[0], *cmdLine;/*Without Newline*/
+	char *cmd = NULL, *prg = argv[0], *cmdLine;/*Without Newline*/
 	ssize_t res;
 	size_t cmdlen = 0;
 	int err_count = 0;
